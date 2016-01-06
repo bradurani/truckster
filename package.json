@@ -1,0 +1,35 @@
+{
+  "name": "truckster",
+  "version": "0.1.0",
+  "description": "webhook for Slack that copies a private git repo to an S3 bucket",
+  "main": "hook.js",
+  "dependencies": {
+    "body-parser": "^1.10.2",
+    "express": "4.x",
+    "immutable": "latest",
+    "node-slack": "0.0.5",
+    "rsvp": "^3.0.16"
+  },
+  "devDependencies": {
+    "jasmine-node": "latest"
+  },
+  "scripts": {
+    "start": "node hook.js",
+    "test": "jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bradurani/truckster.git"
+  },
+  "keywords": [
+    "github",
+    "webhook",
+    "s3",
+    "sync"
+  ],
+  "author": "Brad Urani (http://fractalbanana.com)",
+  "license": "GPL v3.0",
+  "bugs": {
+    "url": "https://github.com/bradurani/truckster/issues"
+  }
+}
